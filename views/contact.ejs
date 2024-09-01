@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - FitnessShare</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <div class="email__container">
+    <h1>Contact Us Here!</h1>
+    <form action="/send-email" method="POST" class="emailForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Email</button>
+    </form>
+    <% if (successMessage) { %>
+      <div class="popup">
+        <div class="overlay"></div>
+        <div class="popup-content">
+          <h2>Thank you for contacting us!</h2>
+          <p><%= successMessage %></p>
+          <button class="close-popup" onclick="window.location.href='/contact'">X</button>
+        </div>
+      </div>
+    <% } %>
+  </div>
+  <script src="/js/main.js"></script>
+</body>
+</html>
