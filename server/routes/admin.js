@@ -53,7 +53,7 @@ router.post('/admin', async (req, res) => {
     }
 
     const token = jwt.sign({ userId: user._id }, jwtSecret);
-    res.cookie('token', token, { httpOnly: true, maxAge: 3600000 }); // Set cookie with maxAge for expiration
+    res.cookie('token', token, { httpOnly: true, maxAge: 3600000 });
     res.redirect('/dashboard');
 
   } catch (error) {
@@ -68,19 +68,15 @@ router.post('/register', async (req, res) => {
   try {
     const { username, password } = req.body;
 
-    // Check if user already exists
     const existingUser = await User.findOne({ username });
     if (existingUser) {
       return res.status(409).send('User already exists');
     }
 
-    // Hash the password
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    // Create a new user
     await User.create({ username, password: hashedPassword });
 
-    // Redirect to the home page after successful registration
     res.redirect('/dashboard');
   } catch (error) {
     console.log(error);

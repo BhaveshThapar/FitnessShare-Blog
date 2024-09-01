@@ -22,11 +22,11 @@
 .navbar__container {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Ensures vertical alignment */
-  height: 100%; /* Ensures full height of the navbar */
+  align-items: center;
+  height: 100%;
   width: 100%;
   max-width: 1300px;
-  padding: 0 50px; /* Horizontal padding */
+  padding: 0 50px;
 }
 
 #navbar__logo {
@@ -45,15 +45,15 @@
 }
 
 .navbar__menu {
-  display: flex; /* Ensure items are displayed in a row */
-  align-items: center; /* Vertical alignment */
+  display: flex;
+  align-items: center;
   list-style: none;
-  margin: 0; /* Remove default margins */
-  padding: 0; /* Remove default padding */
+  margin: 0;
+  padding: 0;
 }
 
 .navbar__item {
-  margin: 0 1rem; /* Horizontal spacing between items */
+  margin: 0 1rem;
 }
 
 .navbar__links {
@@ -68,9 +68,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Ensure it occupies full height of navbar item */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 /* Button Styles */
@@ -81,19 +81,19 @@
   text-decoration: none;
   cursor: pointer;
   font-size: 1rem;
-  padding: 10px 20px; /* Adjust padding as needed */
-  height: 40px; /* Set a specific height for the button */
-  width: auto; /* Adjust width to fit content */
+  padding: 10px 20px;
+  height: 40px;
+  width: auto;
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #f77062; /* Button background color */
-  color: #fff; /* Button text color */
-  transition: background 0.3s ease; /* Smooth transition for hover effect */
+  background: #f77062;
+  color: #fff; 
+  transition: background 0.3s ease;
 }
 
 .button:hover {
-  background: #4837ff; /* Background color on hover */
+  background: #4837ff; 
 }
 
 /* Responsive Styles */
@@ -965,15 +965,14 @@ textarea {
   font-size: var(--font-size-md);
   margin: 5px 0 40px 0;
 } */
-
 /* Article Section */
 .articles {
   background-color: #131313;
   padding: 50px 0;
   color: #fff;
   text-align: center;
-  max-width: 1200px; /* Adjust the max-width as needed */
-  margin: 0 auto;    /* Center the section horizontally */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Parent container */
@@ -982,17 +981,17 @@ textarea {
   flex-direction: column;
   text-align: center;
   width: 100%;
-  max-width: 1200px; /* Adjust to your needs */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
 /* Heading styling */
 .articles__heading {
-  font-size: 2rem; /* Adjust size as needed */
+  font-size: 2rem;
   font-weight: 700;
-  color: #fff; /* Adjust color as needed */
-  background-color: #ff8177; /* Adjust color as needed */
+  color: #fff;
+  background-color: #ff8177;
   background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -1002,7 +1001,6 @@ textarea {
   margin: 0;
   padding: 10px;
 }
-
 
 .article-ul {
   list-style-type: none;
@@ -1018,12 +1016,8 @@ textarea {
   cursor: pointer;
   transition: filter 0.1s;
   border-bottom: 1px solid var(--gray-light);
-  margin-bottom: 18px; /* Adjust spacing between items */
-  padding-bottom: 10px; /* Adjust padding for spacing */
-}
-
-.article-ul li:not(:last-child) {
-  border-bottom: 1px solid var(--gray-light);
+  margin-bottom: 18px;
+  padding-bottom: 10px;
 }
 
 .article-ul li:hover {
@@ -1047,7 +1041,6 @@ textarea {
 }
 
 .article-list__date {
-  
   font-size: 1rem;
   color: var(--gray);
   display: inline-block;
@@ -1122,7 +1115,6 @@ textarea {
   }
 }
 
-
 /* Dashboard Admin */
 .admin-title {
   display: flex;
@@ -1139,13 +1131,13 @@ textarea {
   display: inline-block;
 }
 
-.admin-post-controls .btn  {
+.admin-post-controls .btn {
   display: inline-block;
   background-color: var(--black);
   color: var(--gray-light);
   border: 0;
   text-decoration: none;
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding: 4px 8px;
   line-height: 2;
 }
@@ -1154,15 +1146,14 @@ textarea {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-} 
-
+}
 
 /* Article Styling */
 .article {
   margin: 2rem 0;
-  font-size: 1.6rem; /* Adjust font size as needed */
-  line-height: 1.8; /* Adjust line height for readability */
-  color: #e0e0e0; /* Adjust text color to match your theme */
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #e0e0e0;
 }
 
 .article h2 {
@@ -1209,38 +1200,37 @@ textarea {
 
 /* Form Styling */
 form {
-  background-color: #1e1e1e; /* Dark background to match main section */
+  background-color: #1e1e1e;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for depth */
-  max-width: 400px; /* Restrict form width for better appearance */
-  margin: 2rem auto; /* Center form horizontally with margin */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 2rem auto;
 }
 
-/* Centering the <h3> elements */
 h3 {
-  font-size: 2.5rem; /* Size for h3 headings */
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #ff8177; /* Match heading color from main content */
-  text-align: center; /* Center align text */
+  color: #ff8177;
+  text-align: center;
 }
 
 form label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #fff; /* Light text color for labels */
-  font-weight: 700; /* Bold labels for emphasis */
+  color: #fff;
+  font-weight: 700;
 }
 
 form input[type="text"],
 form input[type="password"] {
-  width: calc(100% - 2rem); /* Full width minus padding */
+  width: calc(100% - 2rem);
   padding: 0.75rem;
   margin-bottom: 1rem;
-  border: 1px solid #333; /* Dark border to match background */
+  border: 1px solid #333;
   border-radius: 4px;
-  background-color: #282828; /* Slightly lighter background */
-  color: #fff; /* Text color */
+  background-color: #282828;
+  color: #fff;
 }
 
 form input[type="submit"] {
@@ -1254,11 +1244,11 @@ form input[type="submit"] {
   transition: all 0.35s;
   outline: none;
   display: block;
-  margin: 1rem auto; /* Center the button horizontally */
+  margin: 1rem auto;
 }
 
 form input[type="submit"]:hover {
-  background-color: #4837ff; /* Change on hover */
+  background-color: #4837ff;
 }
 
 @media screen and (max-width: 768px) {
@@ -1293,15 +1283,15 @@ form input[type="submit"]:hover {
 
 /* General Styles */
 body {
-  background-color: #141414; /* Dark background to match the site theme */
-  color: #fff; /* Light text color for readability */
-  font-family: Arial, sans-serif; /* Font for the entire page */
+  background-color: #141414;
+  color: #fff;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 a {
-  color: #ff8177; /* Match link color with headings */
+  color: #ff8177;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
@@ -1309,138 +1299,18 @@ a {
 }
 
 a:hover {
-  text-decoration: underline; /* Underline on hover for better accessibility */
+  text-decoration: underline;
 }
 
+/* Admin Title */
 .admin-title {
-  text-align: center; /* Center align the title */
+  text-align: center;
   margin: 2rem 0;
 }
 
 .admin-title h2 {
-  font-size: 3rem; /* Adjust size as needed */
-  color: #ff8177; /* Match heading color from main content */
-}
-
-/* Form Styling */
-form {
-  background-color: #1e1e1e; /* Dark background to match main section */
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for depth */
-  max-width: 600px; /* Restrict form width for better appearance */
-  margin: 2rem auto; /* Center form horizontally with margin */
-}
-
-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #fff; /* Light text color for labels */
-  font-weight: 700; /* Bold labels for emphasis */
-}
-
-form input[type="text"],
-form textarea {
-  width: calc(100% - 2rem); /* Full width minus padding */
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #333; /* Dark border to match background */
-  border-radius: 4px;
-  background-color: #282828; /* Slightly lighter background */
-  color: #fff; /* Text color */
-}
-form input[type="email"],
-form textarea {
-  width: calc(100% - 2rem); /* Full width minus padding */
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #333; /* Dark border to match background */
-  border-radius: 4px;
-  background-color: #282828; /* Slightly lighter background */
-  color: #fff; /* Text color */
-}
-
-
-form textarea {
-  resize: vertical; /* Allow vertical resizing of the textarea */
-}
-
-form input[type="submit"] {
-  font-size: 1rem;
-  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-  padding: 14px 32px;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.35s;
-  outline: none;
-  display: block;
-  margin: 1rem auto; /* Center the button horizontally */
-}
-
-form input[type="submit"]:hover {
-  background-color: #4837ff; /* Change on hover */
-}
-
-@media screen and (max-width: 768px) {
-  .admin-title h2 {
-    font-size: 2.5rem;
-  }
-
-  form {
-    padding: 1.5rem;
-  }
-
-  form input[type="text"],
-  form textarea {
-    padding: 0.5rem;
-  }
-
-  form input[type="submit"] {
-    padding: 12px 24px;
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .admin-title h2 {
-    font-size: 2rem;
-  }
-
-  form {
-    padding: 1rem;
-  }
-
-  form input[type="text"],
-  form textarea {
-    padding: 0.5rem;
-  }
-
-  form input[type="submit"] {
-    padding: 12px 20px;
-    font-size: 0.8rem;
-  }
-}
-
-/* General Styles */
-body {
-  background-color: #141414; /* Dark background to match the site theme */
-  color: #fff; /* Light text color for readability */
-  font-family: Arial, sans-serif; /* Font for the entire page */
-  margin: 0;
-  padding: 0;
-}
-
-/* Title Section */
-.admin-title {
-  text-align: center; /* Center align the title and button */
-  margin: 2rem 0;
-}
-
-.admin-title h2 {
-  font-size: 3rem; /* Size for the title */
-  color: #ff8177; /* Heading color to match theme */
+  font-size: 3rem;
+  color: #ff8177;
   margin-bottom: 1rem;
 }
 
@@ -1458,32 +1328,32 @@ body {
 }
 
 .admin-title .button:hover {
-  background-color: #4837ff; /* Change on hover */
+  background-color: #4837ff;
 }
 
 /* Posts List */
 .admin-posts {
-  list-style: none; /* Remove default list styling */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .admin-posts li {
-  background-color: #1e1e1e; /* Dark background for list items */
+  background-color: #1e1e1e;
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .admin-posts li a {
-  color: #ff8177; /* Match link color with headings */
+  color: #ff8177;
   text-decoration: none;
   font-size: 1.6rem;
 }
 
 .admin-posts li a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
 .admin-post-controls {
@@ -1492,211 +1362,15 @@ body {
 
 .admin-post-controls .btn {
   font-size: 1rem;
-  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #ff8177;
   color: #fff;
-  text-decoration: none;
-  padding: 8px 16px;
+  border: none;
   border-radius: 4px;
-  margin-right: 0.5rem;
-  transition: all 0.35s;
   cursor: pointer;
 }
 
 .admin-post-controls .btn:hover {
-  background-color: #4837ff; /* Change on hover */
+  background-color: #ff5196;
 }
-
-.admin-post-controls form {
-  display: inline; /* Keep the form in line with other controls */
-}
-
-.admin-post-controls input[type="submit"] {
-  font-size: 1rem;
-  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-  color: #fff;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.35s;
-  outline: none;
-}
-
-.admin-post-controls input[type="submit"]:hover {
-  background-color: #4837ff; /* Change on hover */
-}
-
-@media screen and (max-width: 768px) {
-  .admin-title h2 {
-    font-size: 2.5rem;
-  }
-
-  .admin-title .button {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-
-  .admin-posts li {
-    padding: 0.75rem;
-  }
-
-  .admin-post-controls .btn,
-  .admin-post-controls input[type="submit"] {
-    padding: 6px 12px;
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .admin-title h2 {
-    font-size: 2rem;
-  }
-
-  .admin-title .button {
-    padding: 8px 16px;
-    font-size: 0.8rem;
-  }
-
-  .admin-posts li {
-    padding: 0.5rem;
-  }
-
-  .admin-post-controls .btn,
-  .admin-post-controls input[type="submit"] {
-    padding: 4px 8px;
-    font-size: 0.8rem;
-  }
-}
-
-/* General Styles */
-body {
-  background-color: #141414; /* Dark background to match the site theme */
-  color: #fff; /* Light text color for readability */
-  font-family: Arial, sans-serif; /* Font for the entire page */
-  margin: 0;
-  padding: 0;
-}
-
-/* Back Link */
-a {
-  color: #ff8177; /* Match link color with headings */
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  margin: 1rem;
-}
-
-a:hover {
-  text-decoration: underline; /* Underline on hover for better accessibility */
-}
-
-/* Title Section */
-.admin-title {
-  text-align: center; /* Center align the title and button */
-  margin: 2rem 0;
-}
-
-.admin-title h2 {
-  font-size: 3rem; /* Size for the title */
-  color: #ff8177; /* Heading color to match theme */
-  margin-bottom: 1rem;
-}
-
-.admin-title .btn-delete {
-  background-color: #ff4d4d; /* Red background for delete button */
-}
-
-.admin-title .btn-delete:hover {
-  background-color: #e60000; /* Darker red on hover */
-}
-
-/* Form Styling */
-form {
-  background-color: #1e1e1e; /* Dark background to match main section */
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for depth */
-  max-width: 600px; /* Restrict form width for better appearance */
-  margin: 2rem auto; /* Center form horizontally with margin */
-}
-
-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #fff; /* Light text color for labels */
-  font-weight: 700; /* Bold labels for emphasis */
-}
-
-form input[type="text"],
-form textarea {
-  width: calc(100% - 2rem); /* Full width minus padding */
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #333; /* Dark border to match background */
-  border-radius: 4px;
-  background-color: #282828; /* Slightly lighter background */
-  color: #fff; /* Text color */
-}
-
-form textarea {
-  resize: vertical; /* Allow vertical resizing of the textarea */
-}
-
-form input[type="submit"] {
-  font-size: 1rem;
-  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-  padding: 14px 32px;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.35s;
-  outline: none;
-  display: block;
-  margin: 1rem auto; /* Center the button horizontally */
-}
-
-form input[type="submit"]:hover {
-  background-color: #4837ff; /* Change on hover */
-}
-
-@media screen and (max-width: 768px) {
-  .admin-title h2 {
-    font-size: 2.5rem;
-  }
-
-  form {
-    padding: 1.5rem;
-  }
-
-  form input[type="text"],
-  form textarea {
-    padding: 0.5rem;
-  }
-
-  form input[type="submit"] {
-    padding: 12px 24px;
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .admin-title h2 {
-    font-size: 2rem;
-  }
-
-  form {
-    padding: 1rem;
-  }
-
-  form input[type="text"],
-  form textarea {
-    padding: 0.5rem;
-  }
-
-  form input[type="submit"] {
-    padding: 12px 20px;
-    font-size: 0.8rem;
-  }
-}
-
